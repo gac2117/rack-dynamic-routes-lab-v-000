@@ -7,7 +7,7 @@ class Application
       item_name = req.path.split("/item/").last
       resp.write item_name.price
     else
-      resp.write "Path not found"
+      resp.write "Route not found"
       resp.status = 404
     end
   end
